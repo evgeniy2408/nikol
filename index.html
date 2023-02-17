@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Nikol Pinhasova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MullerRegular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body>
+    <div class="site-container">
+      <section class="header fix-block">
+  <h1 class="visually-hidden">Фотограф Николь Пинхасова</h1>
+    <div class="container header__container">
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+          </button>
+
+          <a href="index.html" class="logo" aria-label="логотип">
+            Николь Пинхасова логотип
+          </a>
+          <nav class="nav header__nav menu sub-menu" data-menu>
+            <ul class="list-reset nav__list">
+              <li class="nav__item">
+                <a data-goto=".about" href="#" data-menu-item class="nav__link nav__link--ef scroll-link" aria-label="Обо мне">Обо мне</a>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".portfolio" href="#" data-menu-item class="nav__link nav__sub-link nav__link--ef scroll-link" aria-label="Портфолио">Портфолио</a>
+                <span class="nav__arrow arrow"></span>
+                <ul class="list-reset sub-menu__list">
+                    <li class="sub-menu__item">
+                        <a data-goto=".portfolio-individual" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Индивидуальные съемки">Индивидуальные съемки</a>
+                    </li>
+                    <li class="sub-menu__item">
+                        <a data-goto=".portfolio-family" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Семейные съемки">Семейные съемки</a>
+                    </li>
+                    <li class="sub-menu__item">
+                        <a data-goto=".portfolio-lovestory" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Lovestory">Lovestory</a>
+                    </li>
+                    <li class="sub-menu__item">
+                        <a data-goto=".portfolio-wedding" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Свадебные съемки">Свадебные съемки</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".services" href="#" data-menu-item class="nav__link nav__sub-link nav__link--ef scroll-link" aria-label="Услуги">Услуги</a>
+                <span class="nav__arrow arrow"></span>
+                <ul class="list-reset sub-menu__list">
+                    <li class="sub-menu__item">
+                        <a data-goto=".services-individual" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Индивидуальные съемки">Индивидуальные съемки</a>
+                    </li>
+                    <li class="sub-menu__item">
+                        <a data-goto=".services-wedding" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Свадебные съемки">Свадебные съемки</a>
+                    </li>
+                    <li class="sub-menu__item">
+                        <a data-goto=".services-dop" href="#" data-menu-item class="sub-menu__link sub-menu__link--ef scroll-link" aria-label="Дополнительная информация">Дополнительная информация</a>
+                    </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a data-goto=".footer" href="#" data-menu-item class="nav__link nav__link--ef scroll-link " aria-label="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+</section>
+      <div class="pulse-button">
+    <span class="pulse-button__rings"></span>
+    <span class="pulse-button__rings"></span>
+    <span class="pulse-button__rings"></span>
+    <span class="pulse-button__text">
+        <a class="pulse-button__link" href="https://api.whatsapp.com/send?phone=79885802740">Записаться на съемку</a>
+    </span>
+</div>
+      <main class="main">
+          <section class="about" >
+    <div class="container about__container">
+        <h2 class="section-title mp-reset">Обо мне</h2>
+        <p class="about__descr mp-reset">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ex obcaecati quibusdam voluptate quas laborum hic tempore iste molestiae deserunt magni magnam, consectetur accusamus quidem nemo dignissimos? Alias, atque quod?
+        </p>
+    </div>
+</section>
+          <section class="portfolio">
+    <div class="container portfolio__container">
+        <h2 class="section-title mp-reset">Портфолио</h2>
+        <h3 class="portfolio__title mp-reset portfolio-individual">Индивидуальные съемки</h3>
+        <div class="portfolio__wrapper">
+            <ul class="list-reset grid portfolio__individual">
+            </ul>
+            <button class="btn btn-reset portfolio__btn portfolio__btn-individual btn--stroke btn--stroke-ef">Показать еще</button>
+        </div>
+        <h3 class="portfolio__title mp-reset portfolio-family" >Семейные съемки</h3>
+        <div class="portfolio__wrapper">
+            <ul class="list-reset grid portfolio__family">
+            </ul>
+            <button class="btn btn-reset portfolio__btn portfolio__btn-family btn--stroke btn--stroke-ef">Показать еще</button>
+        </div>
+        <h3 class="portfolio__title mp-reset portfolio-lovestory">Lovestory</h3>
+        <div class="portfolio__wrapper">
+            <ul class="list-reset grid portfolio__lovestory">
+            </ul>
+            <button class="btn btn-reset portfolio__btn portfolio__btn-lovestory btn--stroke btn--stroke-ef">Показать еще</button>
+        </div>
+        <h3 class="portfolio__title mp-reset portfolio-wedding" >Свадебные</h3>
+        <div class="portfolio__wrapper">
+            <ul class="list-reset grid portfolio__wedding">
+            </ul>
+            <button class="btn btn-reset portfolio__btn portfolio__btn-wedding btn--stroke btn--stroke-ef">Показать еще</button>
+        </div>
+    </div>
+</section>
+          <section class="services ">
+    <div class="container services__container">
+        <h2 class="section-title mp-reset">Услуги</h2>
+        <h3 class="services__title mp-reset services-individual">Индивидуальные съемки</h3>
+        <div class="services__wrapper grid">
+            <article class="services__card">
+                <h4 class="services__sub-title mp-reset">Комфорт</h4>
+                <ul class="list-reset services__list">
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                </ul>
+            </article>
+            <article class="services__card">
+                <h4 class="services__sub-title mp-reset">Макси</h4>
+                <ul class="list-reset services__list">
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                </ul>
+            </article>
+        </div>
+        <h3 class="services__title mp-reset services-wedding">Свадебные</h3>
+        <div class="services__wrapper grid">
+            <article class="services__card">
+                <h4 class="services__sub-title mp-reset">Мини</h4>
+                <ul class="list-reset services__list">
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                </ul>
+            </article>
+            <article class="services__card">
+                <h4 class="services__sub-title mp-reset">Комфорт</h4>
+                <ul class="list-reset services__list">
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                </ul>
+            </article>
+            <article class="services__card">
+                <h4 class="services__sub-title mp-reset">Макси</h4>
+                <ul class="list-reset services__list">
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                    <li class="services__list-item">Lorem ipsum dolor</li>
+                </ul>
+            </article>
+        </div>
+        <h3 class="services__title mp-reset services-dop" >Дополнительная информация</h3>
+
+        <ul class="list-reset services__list">
+            <li class="services__list-item">Lorem ipsum dolor</li>
+            <li class="services__list-item">Lorem ipsum dolor</li>
+            <li class="services__list-item">Lorem ipsum dolor</li>
+            <li class="services__list-item">Lorem ipsum dolor</li>
+            <li class="services__list-item">Lorem ipsum dolor</li>
+        </ul>
+    </div>
+</section>
+      </main>
+      <footer class="footer">
+    <div class="container footer__container">
+        <a href="#" class="footer__logo">
+            Николь Пинхасова логотип
+        </a>
+        <div class="footer__call">
+            <span class="footer__call-descr">Телефон</span>
+            <a href="tel:79885802740" class="footer__call-link" aria-label="Мой номер +7 (988) 580-27-40"> +7 (988)
+              580-27-40</a>
+          </div>
+        <ul class="list-reset social-list">
+        <li class="social-list__item">
+            <a href="https://vk.com/nikol_pinhasova" class="social-list__link social-list__link--vk" aria-label="Я в вконтакте">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 0C6.71601 0 0 6.7157 0 15C0 23.2843 6.71601 30 15 30C23.284 30 30 23.2843 30 15C30 6.7157 23.284 0 15 0ZM22.6088 16.6223C23.3079 17.3052 24.0476 17.9478 24.6752 18.7013C24.9532 19.0346 25.2153 19.3792 25.4148 19.7669C25.6996 20.3196 25.4425 20.9257 24.9477 20.9586L21.8747 20.958C21.081 21.0236 20.4494 20.7035 19.9169 20.1609C19.4919 19.7285 19.0975 19.2666 18.6881 18.8194C18.5208 18.6359 18.3447 18.4631 18.1347 18.3272C17.7158 18.0546 17.3518 18.1381 17.1118 18.5758C16.8672 19.0211 16.8114 19.5146 16.788 20.0102C16.7546 20.7348 16.5361 20.9242 15.809 20.9583C14.2554 21.031 12.7814 20.7953 11.4114 20.0121C10.2028 19.3212 9.26731 18.3462 8.45217 17.2423C6.86486 15.0902 5.64921 12.7283 4.55693 10.2985C4.3111 9.7513 4.49095 9.45852 5.09463 9.44716C6.0976 9.42783 7.10056 9.43028 8.10353 9.44624C8.51171 9.45268 8.78179 9.68624 8.93862 10.0714C9.48061 11.4049 10.1451 12.6737 10.9777 13.8503C11.1996 14.1637 11.4261 14.4761 11.7486 14.6974C12.1047 14.9417 12.376 14.861 12.5438 14.4635C12.6513 14.2109 12.6976 13.9409 12.7209 13.6702C12.8007 12.743 12.8102 11.8162 12.6721 10.8927C12.5862 10.3148 12.2612 9.94158 11.6851 9.83233C11.3917 9.77678 11.4347 9.66813 11.5774 9.50056C11.8251 9.21084 12.0571 9.03161 12.5208 9.03161L15.9928 9.031C16.5401 9.13841 16.6628 9.38394 16.7371 9.93514L16.7402 13.7936C16.7337 14.0069 16.8473 14.6391 17.2303 14.7787C17.5372 14.88 17.7397 14.6339 17.9233 14.4396C18.7559 13.556 19.3492 12.5131 19.8804 11.4338C20.1149 10.9577 20.3171 10.4652 20.5136 9.97166C20.6596 9.60675 20.8868 9.42721 21.2986 9.43335L24.642 9.43734C24.7406 9.43734 24.8406 9.43826 24.9382 9.45514C25.5017 9.55151 25.6561 9.79396 25.4817 10.3436C25.2074 11.2073 24.6743 11.9266 24.1531 12.6479C23.5946 13.4201 22.9989 14.1652 22.4458 14.9408C21.9376 15.6497 21.9778 16.0066 22.6088 16.6223Z" fill="#FFFFFF"/>
+                </svg>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a href="https://instagram.com/nikol_pinhasova?igshid=YmMyMTA2M2Y=" class="social-list__link social-list__link--insta" aria-label="Я в Инстаграмм">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.1289 15C12.1289 16.5857 13.4143 17.8711 15 17.8711C16.5857 17.8711 17.8711 16.5857 17.8711 15C17.8711 13.4143 16.5857 12.1289 15 12.1289C13.4143 12.1289 12.1289 13.4143 12.1289 15Z" fill="#FFFFFF"/>
+                    <path d="M8.28558 9.91991C8.4236 9.54591 8.64378 9.2074 8.92989 8.92953C9.20775 8.64343 9.54604 8.42325 9.92026 8.28523C10.2238 8.16736 10.6797 8.02705 11.5195 7.98883C12.4279 7.9474 12.7003 7.93848 15.0001 7.93848C17.3001 7.93848 17.5725 7.94717 18.4807 7.9886C19.3204 8.02705 19.7766 8.16736 20.0799 8.28523C20.4541 8.42325 20.7926 8.64343 21.0702 8.92953C21.3563 9.2074 21.5765 9.54568 21.7148 9.91991C21.8326 10.2234 21.9729 10.6796 22.0112 11.5193C22.0526 12.4275 22.0615 12.6999 22.0615 14.9999C22.0615 17.2997 22.0526 17.5721 22.0112 18.4805C21.9729 19.3203 21.8326 19.7762 21.7148 20.0797C21.5765 20.454 21.3566 20.7923 21.0705 21.0701C20.7926 21.3562 20.4543 21.5764 20.0801 21.7144C19.7766 21.8325 19.3204 21.9728 18.4807 22.011C17.5725 22.0525 17.3003 22.0612 15.0003 22.0612C12.7 22.0612 12.4277 22.0525 11.5197 22.011C10.6799 21.9728 10.2238 21.8325 9.92026 21.7144C9.16907 21.4247 8.57535 20.8309 8.28558 20.0797C8.16771 19.7762 8.0274 19.3203 7.98895 18.4805C7.94753 17.5721 7.93883 17.2997 7.93883 14.9999C7.93883 12.6999 7.94753 12.4275 7.98895 11.5193C8.02718 10.6796 8.16748 10.2234 8.28558 9.91991ZM15.0001 19.4226C17.4429 19.4226 19.4232 17.4426 19.4232 14.9997C19.4232 12.5569 17.4429 10.5768 15.0001 10.5768C12.5574 10.5768 10.5771 12.5569 10.5771 14.9997C10.5771 17.4426 12.5574 19.4226 15.0001 19.4226ZM10.4023 11.4356C10.9731 11.4356 11.4359 10.9728 11.4359 10.4019C11.4359 9.8311 10.9731 9.3683 10.4023 9.3683C9.83145 9.3683 9.36865 9.8311 9.36865 10.4019C9.36888 10.9728 9.83145 11.4356 10.4023 11.4356Z" fill="#FFFFFF"/>
+                    <path d="M15 0C23.283 0 30 6.717 30 15C30 23.283 23.283 30 15 30C6.717 30 0 23.283 0 15C0 6.717 6.717 0 15 0ZM6.43867 18.5511C6.48033 19.468 6.62613 20.094 6.83899 20.6419C7.28645 21.7989 8.20107 22.7135 9.35806 23.161C9.90578 23.3739 10.532 23.5194 11.4487 23.5613C12.3672 23.6032 12.6606 23.6133 14.9998 23.6133C17.3392 23.6133 17.6324 23.6032 18.5511 23.5613C19.4678 23.5194 20.094 23.3739 20.6417 23.161C21.2167 22.9447 21.7371 22.6057 22.1674 22.1674C22.6055 21.7374 22.9445 21.2167 23.1608 20.6419C23.3736 20.0942 23.5194 19.468 23.5611 18.5513C23.6034 17.6326 23.6133 17.3392 23.6133 15C23.6133 12.6608 23.6034 12.3674 23.5613 11.4489C23.5197 10.532 23.3741 9.90601 23.1612 9.35806C22.9449 8.78334 22.6057 8.26263 22.1674 7.83257C21.7374 7.39426 21.2167 7.05528 20.6419 6.83899C20.094 6.62613 19.468 6.48056 18.5511 6.43867C17.6326 6.39679 17.3392 6.38672 15 6.38672C12.6608 6.38672 12.3674 6.39679 11.4489 6.4389C10.532 6.48056 9.90601 6.62613 9.35806 6.83876C8.78334 7.05505 8.26263 7.39426 7.83234 7.83257C7.39426 8.26286 7.05505 8.78334 6.83899 9.35806C6.6259 9.90601 6.48033 10.532 6.43845 11.4489C6.39656 12.3674 6.38672 12.6608 6.38672 15C6.38672 17.3392 6.39656 17.6326 6.43867 18.5511Z" fill="#FFFFFF"/>
+                    </svg>
+            </a>
+        </li>
+        </ul>
+    </div>
+</footer>
+      <div class="graph-modal">
+    <div class="graph-modal__container photo-modal" role="dialog" aria-modal="true" data-graph-target="individual-modal">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1.42872 0.238643L6.75487 5.42386C7.08171 5.74206 7.08171 6.25794 6.75487 6.57614L1.42872 11.7614C1.10188 12.0795 0.571969 12.0795 0.245129 11.7614C-0.0817098 11.4432 -0.0817098 10.9273 0.24513 10.6091L4.97949 6L0.24513 1.39091C-0.0817089 1.07272 -0.0817089 0.556834 0.24513 0.238643C0.57197 -0.0795478 1.10188 -0.0795477 1.42872 0.238643Z"
+            fill="#66666" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M10.5713 0.238643L5.24513 5.42386C4.91829 5.74206 4.91829 6.25794 5.24513 6.57614L10.5713 11.7614C10.8981 12.0795 11.428 12.0795 11.7549 11.7614C12.0817 11.4432 12.0817 10.9273 11.7549 10.6091L7.02051 6L11.7549 1.39091C12.0817 1.07272 12.0817 0.556834 11.7549 0.238643C11.428 -0.0795478 10.8981 -0.0795477 10.5713 0.238643Z"
+            fill="#66666" />
+        </svg>
+      </button>
+      <div class="graph-modal__content">
+        </div>
+  </div>
+  <div class="graph-modal__container photo-modal" role="dialog" aria-modal="true" data-graph-target="family-modal">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.42872 0.238643L6.75487 5.42386C7.08171 5.74206 7.08171 6.25794 6.75487 6.57614L1.42872 11.7614C1.10188 12.0795 0.571969 12.0795 0.245129 11.7614C-0.0817098 11.4432 -0.0817098 10.9273 0.24513 10.6091L4.97949 6L0.24513 1.39091C-0.0817089 1.07272 -0.0817089 0.556834 0.24513 0.238643C0.57197 -0.0795478 1.10188 -0.0795477 1.42872 0.238643Z"
+          fill="#66666" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5713 0.238643L5.24513 5.42386C4.91829 5.74206 4.91829 6.25794 5.24513 6.57614L10.5713 11.7614C10.8981 12.0795 11.428 12.0795 11.7549 11.7614C12.0817 11.4432 12.0817 10.9273 11.7549 10.6091L7.02051 6L11.7549 1.39091C12.0817 1.07272 12.0817 0.556834 11.7549 0.238643C11.428 -0.0795478 10.8981 -0.0795477 10.5713 0.238643Z"
+          fill="#66666" />
+      </svg>
+    </button>
+    <div class="graph-modal__content">
+    </div>
+</div>
+<div class="graph-modal__container photo-modal" role="dialog" aria-modal="true" data-graph-target="lovestory-modal">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.42872 0.238643L6.75487 5.42386C7.08171 5.74206 7.08171 6.25794 6.75487 6.57614L1.42872 11.7614C1.10188 12.0795 0.571969 12.0795 0.245129 11.7614C-0.0817098 11.4432 -0.0817098 10.9273 0.24513 10.6091L4.97949 6L0.24513 1.39091C-0.0817089 1.07272 -0.0817089 0.556834 0.24513 0.238643C0.57197 -0.0795478 1.10188 -0.0795477 1.42872 0.238643Z"
+          fill="#66666" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5713 0.238643L5.24513 5.42386C4.91829 5.74206 4.91829 6.25794 5.24513 6.57614L10.5713 11.7614C10.8981 12.0795 11.428 12.0795 11.7549 11.7614C12.0817 11.4432 12.0817 10.9273 11.7549 10.6091L7.02051 6L11.7549 1.39091C12.0817 1.07272 12.0817 0.556834 11.7549 0.238643C11.428 -0.0795478 10.8981 -0.0795477 10.5713 0.238643Z"
+          fill="#66666" />
+      </svg>
+    </button>
+    <div class="graph-modal__content">
+
+      </div>
+</div>
+<div class="graph-modal__container photo-modal" role="dialog" aria-modal="true" data-graph-target="wedding-modal">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.42872 0.238643L6.75487 5.42386C7.08171 5.74206 7.08171 6.25794 6.75487 6.57614L1.42872 11.7614C1.10188 12.0795 0.571969 12.0795 0.245129 11.7614C-0.0817098 11.4432 -0.0817098 10.9273 0.24513 10.6091L4.97949 6L0.24513 1.39091C-0.0817089 1.07272 -0.0817089 0.556834 0.24513 0.238643C0.57197 -0.0795478 1.10188 -0.0795477 1.42872 0.238643Z"
+          fill="#66666" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5713 0.238643L5.24513 5.42386C4.91829 5.74206 4.91829 6.25794 5.24513 6.57614L10.5713 11.7614C10.8981 12.0795 11.428 12.0795 11.7549 11.7614C12.0817 11.4432 12.0817 10.9273 11.7549 10.6091L7.02051 6L11.7549 1.39091C12.0817 1.07272 12.0817 0.556834 11.7549 0.238643C11.428 -0.0795478 10.8981 -0.0795477 10.5713 0.238643Z"
+          fill="#66666" />
+      </svg>
+    </button>
+    <div class="graph-modal__content">
+
+      </div>
+</div>
+</div>
+
+    </div>
+</body>
+
+</html>
